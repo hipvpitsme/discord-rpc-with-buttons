@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Discord Rich Presence</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1 class="text" id="tutorial" style="cursor: pointer">Click me for a tutorial on how to use!</h1>
+    <input id="clientid" placeholder="Client ID">
+    <input id="details" placeholder="Details">
+    <input id="large_image" placeholder="Large Image ID">
+    <input id="large_text" placeholder="Large Text">
+    <input id="buttons_enabled" placeholder="Buttons Enabled">
+    <input id="button1_enabled" placeholder="Button 1 Toggle">
+    <input id="button2_enabled" placeholder="Button 2 Toggle">
+    <input id="button1_label" placeholder="Button 1 Label">
+    <input id="button1_url" placeholder="Button 1 Url">
+    <input id="button2_label" placeholder="Button 2 Label">
+    <input id="button2_url" placeholder="Button 2 Url">
+    <button id="kill" class="button">Kill App</button>
+    <button id="clear" class="button">Clear All</button>
+    <div id="status">
+      <h1 class="text">RPC Status: Off</h1>
+    </div>
+    <script>
+      require('./index.js')
+    </script>
+  </body>
+</html>
