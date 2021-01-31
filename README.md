@@ -63,5 +63,13 @@ A discord rpc application that uses the new button feature of discord's rpc api.
 ### The button circled in white is "Button 1"
 ### The button circled in blue is "button 2"
 
+## Uninstalling
+### Go to your control panel and look for "Uninstall a program" then search for discord-rpc and an app with the publisher of hipvpitsme will pop up, right click it, click uninstall, then wait for the uninstallation to be completed. When it it completed, the app will disappear from the list in control panel.
+
+## Common bugs
+* When the app launches, the rpc doesnt start
+ * Let the app rest for 5 - 10 minutes closed, then start it again and try changing some of the values, if it still doesnt work join the discord or uninstall and reinstall the app.
+
+
 ## Developement
 ### Download package.json and src into an empty folder on your desktop, open it with your code editor, run npm install, wait for that to finish, then run "npm run start" to start the application to run the app and run "npm run make" to build the app into a .exe, the exe will be outputted into the out/make/name of the exe.exe
