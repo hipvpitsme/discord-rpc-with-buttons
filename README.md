@@ -20,6 +20,9 @@ A discord rpc application that uses the new button feature of discord's rpc api.
 ## For Additional Help, Join My [Discord](https://discord.gg/sjQXh8jRtK)
 
 # Configuration guide
+
+Note: The code updates your status every 5 seconds, it will also write the current files to the config file to save your data when the app is started next, so if your status is taking longer to update, please refer to the troubleshooting guide.
+
 ### When you start the app, it will load the default values from its config file that it creates on first start up or if it doesnt detect one (You wont have to worry about the config file, this process is automatic)
 ### If you clear any of the values, the value in the config file will stay the same. So, push the "Clear All" button and lets g et started
 
