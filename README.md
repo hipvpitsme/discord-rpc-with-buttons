@@ -68,9 +68,10 @@ A discord rpc application that uses the new button feature of discord's rpc api.
 
 ## Common bugs
 * When the app launches, the rpc doesnt start
- * Let the app rest for 5 - 10 minutes closed, then start it again and try changing some of the values, if it still doesnt work join the discord or uninstall and reinstall the app.
+   * Let the app rest for 5 - 10 minutes closed, then start it again and try changing some of the values, if it still doesnt work join the discord or uninstall and reinstall the app.
+ 
 * Game not displaying
- * Try the above method or make sure that "Display currently running game as a status message" under "Game Activity" in your discord settings is toggled on.
+   * Try the above method or make sure that "Display currently running game as a status message" under "Game Activity" in your discord settings is toggled on.
 
 
 ## Developement
