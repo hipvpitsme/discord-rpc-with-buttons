@@ -1,6 +1,9 @@
 # discord-rpc-with-buttons
 A discord rpc application that uses the new button feature of discord's rpc api.
 
+# License 
+## The license that i use allows anyone to use my code, change it in any way, and distribute it as long as my name is still on that code, so please do as you wish with it but do not claim it as your own :)
+
 # How to use
 
 ### Step 1: Download the latest release
@@ -59,3 +62,6 @@ A discord rpc application that uses the new button feature of discord's rpc api.
 ### The text circled in gray is the "Details"
 ### The button circled in white is "Button 1"
 ### The button circled in blue is "button 2"
+
+## Developement
+### Download package.json and src into an empty folder on your desktop, open it with your code editor, run npm install, wait for that to finish, then run "npm run start" to start the application to run the app and run "npm run make" to build the app into a .exe, the exe will be outputted into the out/make/name of the exe.exe
