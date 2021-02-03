@@ -86,7 +86,7 @@ $ cd discord-rpc-with-buttons
 $ npm install
 
 # start the application
-$ npm start
+$ npm run start
 ```
 
 ## ⚠️ License ⚠️
