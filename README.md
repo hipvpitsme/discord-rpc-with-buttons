@@ -18,28 +18,35 @@ The code updates your status every 5 seconds, it will also write the current fil
 When you start the application, it will load default values from the config file. Push clear all to clear the values.
 
 ### Placeholders
-
+* State
+  * The state of your client.
 * Client ID
   * The client ID of your Discord RPC application. If you change this you must restart the application.
 * Details
   * The string that shows under the application name in your RPC. This can be a max of 128 characters.
-* Large Image ID
+* Large Image
   * The large image that will appear in your RPC. This should be the key for an asset in your application. 
 * Large Text
   * The text that appears when you hover over the large image. This can be 128 characters max.
-* Buttons Enabled
-  * Either true or false, determines if buttons show in your RPC.
+* Small Image
+  * The small image that will appear in your RPC. This should be the key for an asset in your application. 
+* Small Text
+  * The text that appears when you hover over the small image. This can be 128 characters max.
 * Button 1 and 2 Toggle
-  * Either true or false, determines if that button will show in your RPC. Buttons Enabled must be true for these buttons to show. 
+  * Determines if that button will show in your RPC.
 * Button 1 and 2 Label
   * The labels for either button
 * Button 1 and 2 URL
-  * The URL that the user should be redirected to when they click the button, this must start with `https://`.
+  * The URL that the user should be redirected to when they click the button, this must start with `https://` or `http://`.
+* Start
+  * The start epoch time your client will use to determine your strat time.
+* End
+  * The end time that your client will use to determine how much time is remaining.
 ## ⭐ Extras ⭐
 
 ### Buttons
-Kill App - This will force close the application.
-Clear All - This will clear all values but not config values.
+Set Start To Current Time - This will set the start value to the current epoch time.
+Set End To Current Time Plus x Seconds - This will set the end value to the current epoch time plus how many seconds you enter, ex: 86400 seconds is a day so if you set the start time to the current time and the end time to plus that many seconds, your rpc will show you ending your game in 23 hours.
 
 
 ### RPC Elements
@@ -57,9 +64,15 @@ The blue circled button is Button 2
 ## ❗ Common issues ❗
 If these don't help, join my [Discord](https://discord.gg/sjQXh8jRtK) for more help.
 
+### If an error message pops up, read the error and do as it says or restart the app.
+
 * "Windows protected your PC"
 
   * To fix this, press "More Info" then "Run Anyway"
+* Buttons Cant Be Clicked
+  * Restart the app
+* My buttons stopped working
+  * Restart the app
 
 ![RPC Windows Defender](https://hipvpitsme.github.io/discord-rpc-with-buttons/images/protected%20pc.png)
 
