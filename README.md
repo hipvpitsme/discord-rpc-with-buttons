@@ -60,6 +60,8 @@ If these don't help, join my [Discord](https://discord.gg/sjQXh8jRtK) for more h
   * Restart the app
 * My buttons stopped working
   * Restart the app
+* My config erased itself
+  * Yeah i don't know why it does this, it does it whevever your app has an error so just so stuff right lol
 
 ![RPC Windows Defender](https://hipvpitsme.github.io/discord-rpc-with-buttons/images/protected%20pc.png)
 
