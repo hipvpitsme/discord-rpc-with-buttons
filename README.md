@@ -48,19 +48,6 @@ When you start the application, it will load default values from the config file
 Set Start To Current Time - This will set the start value to the current epoch time.
 Set End To Current Time Plus x Seconds - This will set the end value to the current epoch time plus how many seconds you enter, ex: 86400 seconds is a day so if you set the start time to the current time and the end time to plus that many seconds, your rpc will show you ending your game in 23 hours.
 
-
-### RPC Elements
-![RPC Elements](https://hipvpitsme.github.io/discord-rpc-with-buttons/images/rpc%20example.png)
-The black circled text is the Large Text
-
-The red circled image is the Large Image
-
-The grey circled text is the Details
-
-The white circled button is Button 1
-
-The blue circled button is Button 2
-
 ## ❗ Common issues ❗
 If these don't help, join my [Discord](https://discord.gg/sjQXh8jRtK) for more help.
 
