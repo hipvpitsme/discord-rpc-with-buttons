@@ -5,6 +5,7 @@ var clearButton = document.getElementById('clear')
 var tutorialButton = document.getElementById('tutorial')
 var clientid = document.getElementById('clientid')
 var details = document.getElementById('details')
+var state = document.getElementById('state')
 var largeImage = document.getElementById('large_image')
 var largeText = document.getElementById('large_text')
 var buttonsEnabled = document.getElementById('buttons_enabled')
@@ -24,6 +25,7 @@ clearButton.addEventListener('click', ()=>{
     buttonsEnabled.value = ""
     clientid.value = ""
     details.value = ""
+    state.value = ""
     largeImage.value = ""
     largeText.value = ""
     button1Enabled.value = ""
@@ -45,6 +47,7 @@ function configExist() {
             clientid: "804405037953450014",
             buttons_enabled: "false",
             details: "Made by hipvpitsme",
+            state: "test",
             large_image: "smile",
             large_text: "Made by hipvpitsme",
             buttons: {
@@ -68,6 +71,7 @@ function writeBare() {
         clientid: "804405037953450014",
         buttons_enabled: "false",
         details: "Made by hipvpitsme",
+        state: "test",
         large_image: "smile",
         large_text: "Made by hipvpitsme",
         buttons: {
@@ -100,16 +104,17 @@ function configValid() {
     } catch(err) {
         data = null
     }
-    if(!data || !data.buttons || data.buttons === null || !data.buttons.button1 || data.buttons.button1 === null || !data.buttons.button2 || data.buttons.button2 === null || !data.details || data.details === "" || !data.large_image || data.large_image === "" || !data.large_text || data.large_text === "" || !data.clientid || !data.buttons_enabled || data.buttons_enabled === "") {
+    if(!data || !data.buttons || data.buttons === null || !data.buttons.button1 || data.buttons.button1 === null || !data.buttons.button2 || data.buttons.button2 === null || !data.details || data.details === "" || !data.state || data.state === "" || !data.large_image || data.large_image === "" || !data.large_text || data.large_text === "" || !data.clientid || !data.buttons_enabled || data.buttons_enabled === "") {
         writeConfig()
     }   
 }
-function writeConfigVals(clientid, details, large_image, large_text, buttons_enabled, button1_enabled, button1_label, button1_url, button2_enabled, button2_label, button2_url) {
+function writeConfigVals(clientid, details, state, large_image, large_text, buttons_enabled, button1_enabled, button1_label, button1_url, button2_enabled, button2_label, button2_url) {
     let data = jsonFile.readFileSync('config.json')
     const obj = { 
         clientid: clientid || data.clientid,
         buttons_enabled: buttons_enabled || data.buttons_enabled,
         details: details || data.details,
+        state: state || data.state,
         large_image: large_image || data.large_image,
         large_text: large_text || data.large_text,
         buttons: {
@@ -133,6 +138,7 @@ var initialData = jsonFile.readFileSync('config.json')
 buttonsEnabled.value = initialData.buttons_enabled
 clientid.value = initialData.clientid
 details.value = initialData.details
+state.value = initialData.state
 largeImage.value = initialData.large_image
 largeText.value = initialData.large_text
 button1Enabled.value = initialData.buttons.button1.enabled
@@ -148,7 +154,7 @@ client.on('ready', () => {
         configExist()
         configValid()
         let data = jsonFile.readFileSync('config.json')
-        writeConfigVals(clientid.value, details.value, largeImage.value, largeText.value, buttonsEnabled.value, button1Enabled.value, button1Label.value, button1Url.value, button2Enabled.value, button2Label.value, button2Url.value)
+        writeConfigVals(clientid.value, details.value, state.value, largeImage.value, largeText.value, buttonsEnabled.value, button1Enabled.value, button1Label.value, button1Url.value, button2Enabled.value, button2Label.value, button2Url.value)
         if(data.buttons_enabled.toLowerCase() === 'true') {
             let statusElement = document.getElementById('status')
             statusElement.innerHTML = '<h1 class="text">RPC Status: On</h1>'
@@ -157,6 +163,7 @@ client.on('ready', () => {
                     pid: process.pid,
                     activity : {
                         details : data.details,
+                        state : data.state,
                         assets : {
                             large_image : data.large_image,
                             large_text : data.large_text
@@ -174,6 +181,7 @@ client.on('ready', () => {
                     pid: process.pid,
                     activity : {
                         details : data.details,
+                        state : data.state,
                         assets : {
                             large_image : data.large_image,
                             large_text : data.large_text
@@ -190,6 +198,7 @@ client.on('ready', () => {
                     pid: process.pid,
                     activity : {
                         details : data.details,
+                        state : data.state,
                         assets : {
                             large_image : data.large_image,
                             large_text : data.large_text
@@ -207,6 +216,7 @@ client.on('ready', () => {
                 pid: process.pid,
                 activity : {
                     details : data.details,
+                    state : data.state,
                     assets : {
                         large_image : data.large_image,
                         large_text : data.large_text
